@@ -5,14 +5,11 @@ var states = require('../index');
 describe('state-postal-codes', function () {
 
   it('should not fail on usage cases given in README.md', function () {
-    var stateCode = 'PB.';
-    var stateName = '(Punjab) ';
 
-    assert(states.sanitizeStateCode(stateCode) === 'PB');
-    assert(states.sanitizeStateName(stateName) === 'Punjab');
-
-    assert(states.getStateNameByStateCode(stateCode) === 'Punjab');
-    assert(states.getStateCodeByStateName(stateName) === 'PB');
+    assert(states.sanitizeStateCode('PB.') === 'PB');
+    assert(states.sanitizeStateName('(PunJAB) ') === 'Punjab');
+    assert(states.getStateNameByStateCode('...MH.=') === 'Maharashtra');
+    assert(states.getStateCodeByStateName('!D#!%e123132lhi') === 'DL');
   });
 
   it('should find a state name given a valid state code', function () {

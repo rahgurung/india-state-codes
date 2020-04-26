@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gurrrung/india-state-codes.git"
+    "url": "git+https://github.com/gurrrung/india-state-codes.git"
   },
   "keywords": [
     "india",
@@ -31,5 +31,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }

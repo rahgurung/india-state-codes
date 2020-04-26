@@ -13,14 +13,10 @@ npm install india-state-codes --save
 ```javascript
 var states = require('india-state-codes');
 
-var stateCode = 'PB.';
-var stateName = '(PunJAB) ';
-
-assert(states.sanitizeStateCode(stateCode) === 'PB');
-assert(states.sanitizeStateName(stateName) === 'Punjab');
-
-assert(states.getStateNameByStateCode(stateCode) === 'Punjab');
-assert(states.getStateCodeByStateName(stateName) === 'PB');
+states.sanitizeStateCode('PB.')  // PB
+states.sanitizeStateName('(PunJAB) ')  // Punjab
+states.getStateNameByStateCode('...MH.=') // Maharashtra
+states.getStateCodeByStateName('!D#!%e123132lhi') // DL (Delhi)
 ```
 ## Inspired from
 https://github.com/mdzhang/us-state-codes
