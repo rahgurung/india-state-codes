@@ -1,0 +1,35 @@
+{
+  "name": "india-state-codes",
+  "version": "1.0.0",
+  "description": "India state names and postal codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gurrrung/india-state-codes.git"
+  },
+  "keywords": [
+    "india",
+    "state",
+    "postal",
+    "code",
+    "name"
+  ],
+  "author": "Rahul Gurung <gurungrahul2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurrrung/india-state-codes/issues"
+  },
+  "homepage": "https://github.com/gurrrung/india-state-codes#readme",
+  "dependencies": {
+    "lodash.invert": "^4.3.0",
+    "lodash.isstring": "^4.0.1",
+    "lodash.map": "^4.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.0"
+  }
+}
