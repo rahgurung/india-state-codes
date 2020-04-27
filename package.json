@@ -1,6 +1,6 @@
 {
   "name": "india-state-codes",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "India state names and postal codes",
   "main": "index.js",
   "scripts": {
